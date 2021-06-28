@@ -4,7 +4,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { buildSchema } from "type-graphql";
 
 import { resolvers } from "@generated/type-graphql";
-import { prisma, Context } from "../../lib/prisma";
+import prisma, { Context } from "lib/prisma";
 
 let apolloServerHandler: (req: any, res: any) => Promise<void>;
 
